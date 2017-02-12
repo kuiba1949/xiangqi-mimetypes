@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+  <mime-type type="application/xiangqi-pgn">
+    <comment>PGN Xiangqi game record/book</comment>
+    <comment xml:lang="zh_CN">PGN 象棋对局/棋谱文件</comment>
+    <comment xml:lang="zh_TW">PGN 象棋對局/棋譜檔案</comment>
+    <generic-icon name="application-xiangqi-pgn"/>
+    <glob pattern="*.pgn" weight="60"/>
+    <sub-class-of type="text/plain"/>
+    <magic priority="60">
+      <match value="[Game " type="string" offset="0"/>
+      <match value="[Event \x22Chinese Chess" type="string" offset="0"/>
+      <match value="=http://www.elephantbase.net=" type="string" offset="0:2048"/>
+    </magic>
+  </mime-type>
+  <mime-type type="application/xiangqi-fen">
+    <comment>PGN Xiangqi position</comment>
+    <comment xml:lang="zh_CN">FEN 象棋棋子布局文件</comment>
+    <alias type="application/x-chess-fen"/>
+    <generic-icon name="application-xiangqi-fen"/>
+    <glob pattern="*.fen" weight="60"/>
+    <sub-class-of type="text/plain"/>
+    <magic priority="60">
+      <match value="[FEN" type="string" offset="0"/>
+    </magic>
+  </mime-type>
+  <mime-type type="application/xiangqi-cbl">
+    <comment>CBL Ccbridge Xiangqi Book</comment>
+    <comment xml:lang="zh_CN">CBL 象棋桥棋谱</comment>
+    <generic-icon name="application-xiangqi-cbl"/>
+    <glob pattern="*.cbl"/>
+    <sub-class-of type="application/octet-stream"/>
+    <magic priority="50">
+      <match value="CCBridge\x15\x00\x00" type="string" offset="0"/>
+    </magic>
+  </mime-type>
+  <mime-type type="application/xiangqi-cbf+xml">
+    <comment>CBF Ccbridge Xiangqi Book (XML format)</comment>
+    <comment xml:lang="zh_CN">CBF 象棋桥棋谱(XML格式)</comment>
+    <generic-icon name="application-xiangqi-cbf"/>
+    <glob pattern="*.cbf"/>
+    <sub-class-of type="text/plain"/>
+    <magic priority="60">
+      <match value="&lt;ChineseChessRecord " type="string" offset="43"/>
+    </magic>
+  </mime-type>
+  <mime-type type="application/xiangqi-cbr">
+    <comment>CBR Ccbridge Xiangqi Book</comment>
+    <comment xml:lang="zh_CN">CBR 象棋桥棋谱</comment>
+    <generic-icon name="application-xiangqi-cbr"/>
+    <glob pattern="*.cbr"/>
+    <sub-class-of type="application/octet-stream"/>
+    <magic priority="50">
+      <match value="CCBridge Record" type="string" offset="0"/>
+    </magic>
+  </mime-type>
+  <mime-type type="application/xiangqi-xqf">
+    <comment>XQF XQStudio Book</comment>
+    <comment xml:lang="zh_CN">XQF 象棋演播室棋谱</comment>
+    <generic-icon name="application-xiangqi-xqf"/>
+    <glob pattern="*.xqf"/>
+    <sub-class-of type="application/octet-stream"/>
+    <magic priority="50">
+      <match value="XQ" type="string" offset="0"/>
+    </magic>
+  </mime-type>
+  <mime-type type="application/xiangqi-mxq">
+    <comment>MXQ Movesky Xiangqi Book</comment>
+    <comment xml:lang="zh_CN">MXQ 弈天象棋棋谱</comment>
+    <generic-icon name="application-xiangqi-mxq"/>
+    <glob pattern="*.mxq"/>
+    <sub-class-of type="application/octet-stream"/>
+    <magic priority="50">
+      <match value="Moves" type="string" offset="102"/>
+    </magic>
+  </mime-type>
+  <mime-type type="application/xiangqi-che">
+    <comment>QQ Xiangqi Book (CHE Format)</comment>
+    <comment xml:lang="zh_CN">QQ象棋棋谱(CHE格式)</comment>
+    <generic-icon name="application-xiangqi-che"/>
+    <glob pattern="*.che"/>
+    <sub-class-of type="text/plain"/>
+    <magic priority="60">
+      <match value="1 62 21 " type="string" offset="0"/>
+    </magic>
+  </mime-type>
+  <mime-type type="application/xiangqi-ccm">
+    <comment>CCM Chinagames Xiangqi Book</comment>
+    <comment xml:lang="zh_CN">CCM 中游象棋棋谱</comment>
+    <generic-icon name="application-xiangqi-ccm"/>
+    <glob pattern="*.ccm"/>
+    <sub-class-of type="application/octet-stream"/>
+    <magic priority="50">
+      <match value="\x01\x00\x12\x00k" type="string" offset="0"/>
+    </magic>
+  </mime-type>
+ <mime-type type="application/xiangqi-chn">
+    <comment>CHN Ourgame Xiangqi Book</comment>
+    <comment xml:lang="zh_CN">CHN 联众象棋棋谱</comment>
+    <generic-icon name="application-xiangqi-chn"/>
+    <glob pattern="*.chn"/>
+    <sub-class-of type="application/octet-stream"/>
+    <magic priority="40">
+      <match value="GL\xd0\x07" type="string" offset="0"/>
+    </magic>
+  </mime-type>
+  <mime-type type="application/xiangqi-xqi">
+    <comment>XQI Ourgame Xiangqi Book</comment>
+    <comment xml:lang="zh_CN">XQI 联众象棋棋谱</comment>
+    <generic-icon name="application-xiangqi-xqi"/>
+    <glob pattern="*.xqi"/>
+    <sub-class-of type="application/octet-stream"/>
+    <magic priority="50">
+      <match value="GL\xd0\x07" type="string" offset="0"/>
+    </magic>
+  </mime-type>
+  <mime-type type="application/xiangqi-epd">
+    <comment>EPD XQWizard Xiangqi position</comment>
+    <comment xml:lang="zh_CN">EPD 象棋巫师棋子布局</comment>
+    <generic-icon name="application-xiangqi-epd"/>
+    <glob pattern="*.epd"/>
+    <sub-class-of type="text/plain"/>
+    <magic priority="50">
+      <match value=" w - - 0 1" type="string" offset="20:62"/>
+    </magic>
+  </mime-type>
+</mime-info>

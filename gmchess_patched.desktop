@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Chinese chess (with patch)
+Name[zh_CN]=天书棋谈 (补丁版)
+Comment=Play the popular chinese chess game
+Comment[zh_CN]=玩流行的中国象棋游戏
+Type=Application
+MimeType=application/xiangqi-pgn;application/xiangqi-xqf;application/xiangqi-mxq;application/xiangqi-che;application/xiangqi-ccm;application/xiangqi-chn;application/xiangqi-xqi;
+Exec=gmchess
+Icon=gmchess
+Terminal=false
+Categories=Game;BoardGame;GTK;
+StartupNotify=true
+
